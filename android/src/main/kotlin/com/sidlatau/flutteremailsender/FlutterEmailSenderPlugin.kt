@@ -141,7 +141,7 @@ class FlutterEmailSenderPlugin
             }
         }
 
-        if (text != null) {
+        if (text != null && !text.trim().isEmpty()) {
             intent.putExtra(Intent.EXTRA_TEXT, text)
         }
 
